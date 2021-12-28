@@ -39,24 +39,7 @@
         <div class="col">
           <h3>The text below was fetched using javascript and plumber API.</h3>
         </div>
-        <script>
-          // Set the options for the API call
-          const myInit = {
-            method: "GET",
-            mode: "same-origin",
-          };
-
-          // Create a new request to the API URL
-          let myRequest = new Request("http://localhost:8080/data");
-
-          // Fill the data object with the result from the API call
-
-          fetch(myRequest, myInit).then((response) => {
-            response.json().then((data) => {
-              console.log(data);
-            });
-          });
-        </script>
+        <script src = "fetch-data.js"></script>
       </div>
     </div>
   </body>

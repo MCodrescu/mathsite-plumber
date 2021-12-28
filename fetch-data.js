@@ -14,3 +14,4 @@ fetch(myRequest, myInit).then((response) => {
     console.log(data);
   });
 });
+

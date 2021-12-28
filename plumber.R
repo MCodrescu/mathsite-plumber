@@ -17,7 +17,7 @@ function(req, res){
 #* @apiTitle Serve Javascript
 
 #* Serve fetch-data.js
-#8 @get /fetch-data.js
+#* @get /fetch-data.js
 function(req, res){
   include_file("fetch-data.js", res = res)
 }
