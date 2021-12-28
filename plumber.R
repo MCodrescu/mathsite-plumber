@@ -13,3 +13,12 @@ function(req, res){
 function(req, res){
   sample(1:10)
 }
+
+#* @apiTitle Serve Javascript
+
+#* Serve fetch-data.js
+#8 @get /fetch-data.js
+function(req, res){
+  include_file("fetch-data.js", res = res)
+}
+
