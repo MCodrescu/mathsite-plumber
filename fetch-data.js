@@ -11,7 +11,8 @@ let myRequest = new Request("http://localhost:8080/data");
 
 fetch(myRequest, myInit).then((response) => {
   response.json().then((data) => {
-    console.log(data);
+    let p = document.querySelector("#sample");
+    p.innerHTML = data;
   });
 });
 
